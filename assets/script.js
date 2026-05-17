@@ -96,8 +96,8 @@ if (heroQuote) {
       qi = (qi + 1) % CITATIONS.length;
       heroQuote.textContent = CITATIONS[qi];
       heroQuote.classList.remove("fade");
-    }, 800);
-  }, 6000);
+    }, 1100);
+  }, 7500);
 }
 
 /* ---------- Apparition au scroll ---------- */
