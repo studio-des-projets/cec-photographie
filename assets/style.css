@@ -89,7 +89,10 @@ img { display: block; max-width: 100%; }
   font-family: "Cormorant Garamond", serif; font-style: italic;
   font-size: 1.35rem; line-height: 1.5;
   color: #2e2b26; max-width: 34ch; margin-bottom: 2.3rem;
+  min-height: 6em;
+  transition: opacity .8s ease;
 }
+.hero-quote.fade { opacity: 0; }
 .kicker {
   font-size: .72rem; letter-spacing: .34em; text-transform: uppercase;
   color: var(--muted); margin-bottom: 1.1rem;
@@ -291,6 +294,9 @@ img { display: block; max-width: 100%; }
   .gallery { columns: 2; }
   .hero { grid-template-columns: 1fr; }
   .hero-img { min-height: 46vh; }
+  .hero-text { text-align: center; align-items: center; }
+  .hero-quote { margin-left: auto; margin-right: auto; }
+  .hero-text .btn { align-self: center; }
   .about { grid-template-columns: 1fr; }
   .about-photo { max-width: 360px; margin: 0 auto; }
 }

@@ -79,6 +79,27 @@ document.addEventListener("keydown", e => {
 
 render("tous");
 
+/* ---------- Citations rotatives de l'accueil ---------- */
+const CITATIONS = [
+  "« Je ne cherche pas la perfection technique. Je cherche une sensation. Une vérité. Une émotion qui reste après le regard. »",
+  "« La photographie est une mémoire du vivant — une manière de retenir l'instant de ce qui nous échappe. »",
+  "« J'aime révéler la beauté de ce qui ne cherche pas à se montrer : les instants suspendus, les fragilités. »",
+  "« Je suis attirée par les atmosphères sincères, les lieux habités, les visages qui vous transpercent le cœur. »",
+  "« Cette lumière intérieure que chacun porte en soi, sans toujours le savoir. »",
+];
+const heroQuote = document.getElementById("hero-quote");
+if (heroQuote) {
+  let qi = 0;
+  setInterval(() => {
+    heroQuote.classList.add("fade");
+    setTimeout(() => {
+      qi = (qi + 1) % CITATIONS.length;
+      heroQuote.textContent = CITATIONS[qi];
+      heroQuote.classList.remove("fade");
+    }, 800);
+  }, 6000);
+}
+
 /* ---------- Apparition au scroll ---------- */
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
