@@ -299,6 +299,61 @@ img { display: block; max-width: 100%; }
 .form-status.ok { color: #4a7c4a; }
 .form-status.err { color: #b05050; }
 
+/* ---------- À propos : photo qui suit le scroll + texte rythmé ---------- */
+.about { align-items: start; }
+.about-photo { position: sticky; top: 96px; }
+.about-text p { margin-bottom: 1.45rem; }
+.about-text p:first-of-type::first-letter {
+  font-family: "Cormorant Garamond", serif; font-weight: 400;
+  font-size: 3.6em; line-height: .76; float: left;
+  margin: .06em .12em 0 0; color: var(--ink);
+}
+
+/* ---------- Bandeau d'introduction de page ---------- */
+.page-intro-text {
+  max-width: 48ch; margin: 1.3rem auto 0;
+  font-family: "Cormorant Garamond", serif; font-style: italic;
+  font-size: 1.3rem; line-height: 1.5; color: #4a463f;
+}
+
+/* ---------- Bandeau de la page Contact ---------- */
+.contact-banner {
+  position: relative; height: 40vh; min-height: 260px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.contact-banner .cb-img {
+  position: absolute; inset: 0;
+  background: url("../images/17_escalier_bleu_lumineux.jpg") center 42%/cover;
+}
+.contact-banner .cb-veil {
+  position: absolute; inset: 0;
+  background: linear-gradient(rgba(10,12,22,.38), rgba(10,12,22,.52));
+}
+.contact-banner h1 {
+  position: relative; z-index: 2; color: var(--cream);
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  text-shadow: 0 2px 26px rgba(8,10,20,.5);
+}
+
+/* ---------- Aperçu de la galerie sur l'accueil ---------- */
+.home-preview {
+  text-align: center; background: var(--cream-deep);
+  padding: clamp(3rem, 7vw, 5.5rem) clamp(1.2rem, 5vw, 4rem);
+}
+.home-preview h2 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); margin-top: .3rem; }
+.home-preview .btn { margin-top: .6rem; }
+.preview-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+  max-width: 1100px; margin: 2.4rem auto;
+}
+.preview-grid a { display: block; overflow: hidden; background: var(--cream); }
+.preview-grid img {
+  width: 100%; height: 260px; object-fit: cover;
+  transition: transform .7s cubic-bezier(.2,.7,.2,1);
+}
+.preview-grid a:hover img { transform: scale(1.06); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1000px) {
   .gallery { columns: 2; }
@@ -308,10 +363,14 @@ img { display: block; max-width: 100%; }
   .hero-quote { margin-left: auto; margin-right: auto; }
   .hero-text .btn { align-self: center; }
   .about { grid-template-columns: 1fr; }
-  .about-photo { max-width: 360px; margin: 0 auto; }
+  .about-photo { max-width: 360px; margin: 0 auto; position: static; }
+  .preview-grid { grid-template-columns: repeat(2, 1fr); }
+  .preview-grid img { height: 200px; }
 }
 @media (max-width: 680px) {
   .gallery { columns: 1; }
+  .preview-grid { grid-template-columns: 1fr; }
+  .preview-grid img { height: 240px; }
   .site-nav {
     position: absolute; top: 100%; left: 0; right: 0;
     flex-direction: column; gap: 0;
