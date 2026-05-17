@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — CÉC Photographie</title>
+  <meta name="description" content="Contacter Cécile, photographe — collaboration, tirage, échange." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css?v=5" />
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <span class="brand-mark">C&thinsp;É&thinsp;C</span>
+      <span class="brand-sub">Photographie</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html" class="is-current">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section section-contact" id="contact">
+      <div class="section-head reveal">
+        <p class="kicker">Échanger</p>
+        <h2>Contact</h2>
+      </div>
+      <p class="contact-line reveal">Pour une collaboration, un tirage ou simplement un mot.</p>
+
+      <form class="contact-form reveal" id="contact-form"
+            action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+        <div class="field">
+          <input type="text" name="nom" id="nom" placeholder=" " required />
+          <label for="nom">Votre nom</label>
+        </div>
+        <div class="field">
+          <input type="email" name="email" id="email" placeholder=" " required />
+          <label for="email">Votre email</label>
+        </div>
+        <div class="field">
+          <textarea name="message" id="message" rows="4" placeholder=" " required></textarea>
+          <label for="message">Votre message</label>
+        </div>
+        <button type="submit" class="btn">Envoyer</button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-links reveal">
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="about-note">— Formulaire à activer (voir LISEZ-MOI.md) et Instagram à compléter —</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="brand-mark small">C&thinsp;É&thinsp;C</span>
+    <p>© <span id="year"></span> Cécile — Tous droits réservés.</p>
+  </footer>
+
+  <script src="assets/script.js?v=5"></script>
+</body>
+</html>

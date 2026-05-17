@@ -9,104 +9,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=4" />
+  <link rel="stylesheet" href="assets/style.css?v=5" />
 </head>
 <body>
 
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Accueil">
+    <a class="brand" href="index.html" aria-label="Accueil">
       <span class="brand-mark">C&thinsp;É&thinsp;C</span>
       <span class="brand-sub">Photographie</span>
     </a>
     <nav class="site-nav">
-      <a href="#top">Accueil</a>
-      <a href="#galerie">Galerie</a>
-      <a href="#apropos">À propos</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="is-current">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </header>
 
-  <section class="hero">
-    <div class="hero-img"></div>
-    <div class="hero-text">
-      <p class="hero-name reveal-load" style="--d:.2s">Cécile — Photographe</p>
-      <h1 class="reveal-load" style="--d:.4s">La mémoire<br>du vivant</h1>
-      <p class="hero-quote reveal-load" id="hero-quote" style="--d:.6s">« Je ne cherche pas la perfection technique. Je cherche une sensation. Une vérité. Une émotion qui reste après le regard. »</p>
-      <a class="btn reveal-load" style="--d:.8s" href="#galerie">Découvrir la galerie</a>
-    </div>
-  </section>
-
   <main>
+    <section class="hero">
+      <div class="hero-img"></div>
+      <div class="hero-text">
+        <p class="hero-name reveal-load" style="--d:.2s">Cécile — Photographe</p>
+        <h1 class="reveal-load" style="--d:.4s">La mémoire<br>du vivant</h1>
+        <p class="hero-quote reveal-load" id="hero-quote" style="--d:.6s">« Je ne cherche pas la perfection technique. Je cherche une sensation. Une vérité. Une émotion qui reste après le regard. »</p>
+        <a class="btn reveal-load" style="--d:.8s" href="galerie.html">Découvrir la galerie</a>
+      </div>
+    </section>
+
     <section class="intro">
       <p class="kicker reveal">Le regard de Cécile</p>
       <p class="intro-text reveal" style="--d:.12s">J'ai souvent les sens en éveil et les yeux grand ouverts, afin de percevoir la profondeur des êtres et des choses, leur vérité, leur vulnérabilité parfois, derrière les apparences.</p>
       <p class="intro-text reveal" style="--d:.24s">J'aime révéler la beauté de ce qui ne cherche pas à se montrer&nbsp;: les instants suspendus, les fragilités, les mouvements du vivant.</p>
       <span class="intro-sign reveal" style="--d:.36s">Cécile — Photographe</span>
-    </section>
-
-    <section class="section" id="galerie">
-      <div class="section-head reveal">
-        <p class="kicker">Sélection</p>
-        <h2>Galerie</h2>
-      </div>
-      <div class="filters reveal" role="tablist">
-        <button class="filter is-active" data-filter="tous">Tout</button>
-        <button class="filter" data-filter="patrimoine">Patrimoine &amp; Art nouveau</button>
-        <button class="filter" data-filter="urbain">Urbain &amp; Street art</button>
-      </div>
-      <div class="gallery" id="gallery"><!-- généré par script.js --></div>
-    </section>
-
-    <section class="section section-about" id="apropos">
-      <div class="about">
-        <div class="about-photo reveal">
-          <img src="images/34_photo_profil_auteur.jpg" alt="Portrait de Cécile" loading="lazy" />
-        </div>
-        <div class="about-text reveal" style="--d:.15s">
-          <p class="kicker">À propos</p>
-          <h2>Cécile</h2>
-          <blockquote class="about-quote">« Je ne cherche pas la perfection technique. Je cherche une sensation. Une vérité. Une émotion qui reste après le regard. »</blockquote>
-          <p>La soif de découverte m'anime. J'ai souvent les sens en éveil et les yeux grand ouverts, afin de percevoir la sensibilité, la profondeur des êtres et des choses, leur vérité, leur vulnérabilité parfois, derrière les apparences.</p>
-          <p>J'aime les nuances et le contraste, la douceur et l'intensité, les silences qui en disent long, les regards qui racontent. La photographie est pour moi une mémoire du vivant — une manière de retenir l'instant de ce, de ceux qui nous échappent : un sourire lumineux, un soleil sur l'eau, une fleur qui frémit, une présence, une vibration.</p>
-          <p>Mon univers est un voyage sensible, poétique, parfois mélancolique, toujours profondément humain. Je suis attirée par les atmosphères sincères, les lieux habités, porteurs de sens et d'histoire, les visages qui vous transpercent le cœur.</p>
-          <p>J'aime révéler la beauté de ce qui ne cherche pas à se montrer : les instants suspendus, les fragilités, les mouvements du vivant. Ce qui m'inspire, c'est la légèreté, l'aérien, les espaces où l'on voit loin, la lumière et son chatoiement de nuances.</p>
-          <p>À travers mes photographies, j'ai envie de transmettre quelque chose d'intime et d'universel à la fois : la beauté discrète des êtres, la profondeur des instants simples, et cette lumière intérieure que chacun porte sans toujours le savoir.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-contact" id="contact">
-      <div class="section-head reveal">
-        <p class="kicker">Échanger</p>
-        <h2>Contact</h2>
-      </div>
-      <p class="contact-line reveal">Pour une collaboration, un tirage ou simplement un mot.</p>
-
-      <form class="contact-form reveal" id="contact-form"
-            action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
-        <div class="field">
-          <input type="text" name="nom" id="nom" placeholder=" " required />
-          <label for="nom">Votre nom</label>
-        </div>
-        <div class="field">
-          <input type="email" name="email" id="email" placeholder=" " required />
-          <label for="email">Votre email</label>
-        </div>
-        <div class="field">
-          <textarea name="message" id="message" rows="4" placeholder=" " required></textarea>
-          <label for="message">Votre message</label>
-        </div>
-        <button type="submit" class="btn">Envoyer</button>
-        <p class="form-status" id="form-status" aria-live="polite"></p>
-      </form>
-
-      <div class="contact-links reveal">
-        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-      <p class="about-note">— Formulaire à activer (voir LISEZ-MOI.md) et Instagram à compléter —</p>
     </section>
   </main>
 
@@ -115,21 +53,6 @@
     <p>© <span id="year"></span> Cécile — Tous droits réservés.</p>
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lb-close" aria-label="Fermer">&times;</button>
-    <button class="lb-nav lb-prev" aria-label="Précédente">&#8249;</button>
-    <button class="lb-nav lb-next" aria-label="Suivante">&#8250;</button>
-    <figure class="lb-stage">
-      <img id="lb-img" src="" alt="" />
-      <figcaption>
-        <span id="lb-caption"></span>
-        <span id="lb-texte" class="lb-texte"></span>
-        <span id="lb-counter" class="lb-counter"></span>
-      </figcaption>
-    </figure>
-  </div>
-
-  <script src="assets/photos.js?v=4"></script>
-  <script src="assets/script.js?v=4"></script>
+  <script src="assets/script.js?v=5"></script>
 </body>
 </html>
