@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galerie — CÉC Photographie</title>
-  <meta name="description" content="La galerie photographique de Cécile — patrimoine Art nouveau, vitraux, art urbain." />
+  <meta name="description" content="Les séries photographiques de Cécile — patrimoine Art nouveau, art urbain, et de nouvelles séries à venir." />
   <link rel="icon" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=7" />
+  <link rel="stylesheet" href="assets/style.css?v=8" />
 </head>
 <body>
 
@@ -30,18 +30,50 @@
   </header>
 
   <main>
-    <section class="section" id="galerie">
+    <section class="section">
       <div class="section-head reveal">
-        <p class="kicker">Sélection</p>
+        <p class="kicker">Les séries</p>
         <h2>Galerie</h2>
-        <p class="page-intro-text">Des verrières Art nouveau aux murs de la rue — une collection d'instants suspendus, là où la lumière raconte quelque chose.</p>
+        <p class="page-intro-text">Chaque série est un voyage à part. Choisissez celle qui vous appelle — d'autres se préparent.</p>
       </div>
-      <div class="filters reveal" role="tablist">
-        <button class="filter is-active" data-filter="tous">Tout</button>
-        <button class="filter" data-filter="patrimoine">Patrimoine &amp; Art nouveau</button>
-        <button class="filter" data-filter="urbain">Urbain &amp; Street art</button>
+
+      <div class="series-grid reveal">
+        <a class="serie-card" href="serie-patrimoine.html">
+          <div class="serie-img" style="background-image:url('images/23_verriere_circulaire_lumineuse.jpg')"></div>
+          <div class="serie-veil"></div>
+          <div class="serie-label">
+            <h3>Patrimoine &amp; Art nouveau</h3>
+            <span class="serie-count">29 photographies</span>
+          </div>
+        </a>
+
+        <a class="serie-card" href="serie-urbain.html">
+          <div class="serie-img" style="background-image:url('images/39_street_art_enfant_rouge.jpg')"></div>
+          <div class="serie-veil"></div>
+          <div class="serie-label">
+            <h3>Urbain &amp; Street art</h3>
+            <span class="serie-count">14 photographies</span>
+          </div>
+        </a>
+
+        <a class="serie-card is-soon" href="bientot.html?serie=Sur+le+vif">
+          <div class="serie-img" style="background-image:url('images/04_silhouette_feminine_carte.jpg')"></div>
+          <div class="serie-veil"></div>
+          <div class="serie-label">
+            <h3>Sur le vif</h3>
+            <span class="soon-badge">Bientôt</span>
+          </div>
+        </a>
+
+        <a class="serie-card is-soon" href="bientot.html?serie=Voyages">
+          <div class="serie-img" style="background-image:url('images/27_reflet_vitrine_tokyo.jpg')"></div>
+          <div class="serie-veil"></div>
+          <div class="serie-label">
+            <h3>Voyages</h3>
+            <span class="soon-badge">Bientôt</span>
+          </div>
+        </a>
       </div>
-      <div class="gallery" id="gallery"><!-- généré par script.js --></div>
     </section>
   </main>
 
@@ -51,21 +83,6 @@
     <p>© <span id="year"></span> Cécile — Tous droits réservés.</p>
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lb-close" aria-label="Fermer">&times;</button>
-    <button class="lb-nav lb-prev" aria-label="Précédente">&#8249;</button>
-    <button class="lb-nav lb-next" aria-label="Suivante">&#8250;</button>
-    <figure class="lb-stage">
-      <img id="lb-img" src="" alt="" />
-      <figcaption>
-        <span id="lb-caption"></span>
-        <span id="lb-texte" class="lb-texte"></span>
-        <span id="lb-counter" class="lb-counter"></span>
-      </figcaption>
-    </figure>
-  </div>
-
-  <script src="assets/photos.js?v=7"></script>
-  <script src="assets/script.js?v=7"></script>
+  <script src="assets/script.js?v=8"></script>
 </body>
 </html>

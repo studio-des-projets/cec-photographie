@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urbain &amp; Street art — CÉC Photographie</title>
+  <meta name="description" content="Série photographique de Cécile : art urbain, street art et scènes de rue." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css?v=8" />
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <span class="brand-mark">C&thinsp;É&thinsp;C</span>
+      <span class="brand-sub">Photographie</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="galerie.html" class="is-current">Galerie</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section" id="galerie">
+      <div class="section-head reveal">
+        <p class="kicker"><a href="galerie.html" class="back-link">Séries</a> — Urbain</p>
+        <h2>Urbain &amp; Street art</h2>
+        <p class="page-intro-text">Des visages collés sur les murs, des arbres habillés de laine — la rue qui devient tendre.</p>
+      </div>
+      <div class="gallery" id="gallery" data-serie="urbain"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand">Cécile</span>
+    <span class="footer-sub">Photographe</span>
+    <p>© <span id="year"></span> Cécile — Tous droits réservés.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Fermer">&times;</button>
+    <button class="lb-nav lb-prev" aria-label="Précédente">&#8249;</button>
+    <button class="lb-nav lb-next" aria-label="Suivante">&#8250;</button>
+    <figure class="lb-stage">
+      <img id="lb-img" src="" alt="" />
+      <figcaption>
+        <span id="lb-caption"></span>
+        <span id="lb-texte" class="lb-texte"></span>
+        <span id="lb-counter" class="lb-counter"></span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <script src="assets/photos.js?v=8"></script>
+  <script src="assets/script.js?v=8"></script>
+</body>
+</html>

@@ -7,7 +7,10 @@ Site portfolio de Cécile. Statique (HTML/CSS/JS), hébergé sur GitHub Pages.
 ```
 cec-photographie/
 ├── index.html              Page Accueil
-├── galerie.html            Page Galerie
+├── galerie.html            Page Galerie (les séries)
+├── serie-patrimoine.html   Série Patrimoine & Art nouveau
+├── serie-urbain.html       Série Urbain & Street art
+├── bientot.html            Page « série à venir »
 ├── apropos.html            Page À propos
 ├── contact.html            Page Contact
 ├── images/                 Les photos (originales)
