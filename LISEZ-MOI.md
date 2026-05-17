@@ -6,7 +6,10 @@ Site portfolio de Cécile. Statique (HTML/CSS/JS), hébergé sur GitHub Pages.
 
 ```
 cec-photographie/
-├── index.html              La page du site
+├── index.html              Page Accueil
+├── galerie.html            Page Galerie
+├── apropos.html            Page À propos
+├── contact.html            Page Contact
 ├── images/                 Les photos (originales)
 ├── assets/
 │   ├── style.css           Le design
