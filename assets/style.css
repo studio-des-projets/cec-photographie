@@ -213,7 +213,16 @@ img { display: block; max-width: 100%; }
   text-align: center; padding: 3rem 1.5rem;
   border-top: 1px solid var(--line);
 }
-.site-footer .brand-mark { letter-spacing: .2em; margin-bottom: .6rem; }
+.footer-brand {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7rem; letter-spacing: .1em;
+}
+.footer-sub {
+  display: block;
+  font-size: .6rem; letter-spacing: .42em; text-transform: uppercase;
+  color: var(--muted); margin-top: .2rem; margin-bottom: .8rem;
+}
 .site-footer p { font-size: .78rem; letter-spacing: .1em; color: var(--muted); }
 
 /* ---------- Lightbox ---------- */
@@ -380,4 +389,6 @@ img { display: block; max-width: 100%; }
   .site-nav.open { max-height: 320px; }
   .site-nav a { padding: 1rem clamp(1.2rem, 4vw, 3.5rem); border-top: 1px solid var(--line); }
   .nav-toggle { display: block; }
+  .site-header { justify-content: center; }
+  .nav-toggle { position: absolute; right: clamp(1.2rem, 4vw, 3.5rem); }
 }
