@@ -97,7 +97,7 @@ if (heroQuote) {
       heroQuote.textContent = CITATIONS[qi];
       heroQuote.classList.remove("fade");
     }, 1100);
-  }, 7500);
+  }, 4500);
 }
 
 /* ---------- Apparition au scroll ---------- */
