@@ -225,7 +225,7 @@ img { display: block; max-width: 100%; }
 .footer-brand {
   display: block;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.7rem; letter-spacing: .1em;
+  font-size: 1.7rem; letter-spacing: .18em;
 }
 .footer-sub {
   display: block;
