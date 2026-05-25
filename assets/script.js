@@ -32,7 +32,7 @@ if (gallery && typeof PHOTOS !== "undefined") {
     const item = document.createElement("figure");
     item.className = "gallery-item";
     const img = document.createElement("img");
-    img.src = "images/" + p.fichier;
+    img.src = "thumbs/" + p.fichier;
     img.alt = p.titre;
     img.loading = "lazy";
     const markLoaded = () => item.classList.add("loaded");
